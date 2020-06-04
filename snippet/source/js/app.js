@@ -5,7 +5,8 @@ window.onload = function() {
     var $body = document.body,
 	    $lightDarkCss = document.getElementById("lightDarkCss"),//浅色/深色模式样式
 	    $lightDarkBtn = document.getElementById("lightDarkBtn"),//浅色/深色模式按钮
-        $mnav = document.getElementById("mnav"), //获取导航三角图标
+	    $headerGif = document.getElementById("header-gif"),//顶部动图
+        $mnav = document.getElementById("mnav"), //导航三角图标
         $mainMenu = document.getElementById("main-menu"), //手机导航
         $process = document.getElementById('process'), //进度条
         $ajaxImgs = document.querySelectorAll('.img-ajax'), //图片懒加载
@@ -131,4 +132,9 @@ window.onload = function() {
             $lightDarkCss.href = "/css/style-light.css";
 		}
     };
+
+    //顶部动图点击
+    $headerGif.onclick = function() {
+        window.open("/tmp/", "_self");
+    }
 };

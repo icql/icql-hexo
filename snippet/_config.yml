@@ -35,7 +35,7 @@ rss: /atom.xml
 
 ## Carousel
 carousel:
-  img: '/img/head-img.jpg'
+  img: '/img/index-adv.jpg'
   url: 'https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=be5loode'
 
 # 各个小工具的设置
@@ -71,11 +71,11 @@ notification: |-
 
 ## 友链设置
 links:
-  - k8s: http://devops.k8s.icql.work
-  - jenkins: http://devops.jenkins.icql.work
-  - frp: http://devops.frp.icql.work
-  - archive: http://archive.icql.work
-  - file: http://file.icql.work
+  - k8s: https://devops.k8s.icql.work
+  - jenkins: https://devops.jenkins.icql.work
+  - frp: https://devops.frp.icql.work
+  - archive: https://archive.icql.work
+  - file: https://file.icql.work
 
 ## 社交设置
 social:
