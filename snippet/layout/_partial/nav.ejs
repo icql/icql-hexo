@@ -1,0 +1,37 @@
+<nav class="main-navigation">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="navbar-header"><span class="nav-toggle-button collapsed pull-right" data-toggle="collapse" data-target="#main-menu" id="mnav">
+                        <span class="sr-only"></span>
+                        <i class="fa fa-bars"></i>
+                    </span>
+                    <a class="navbar-brand" href="<%= config.url %>">
+                        <%= config.title %></a>
+                </div>
+                <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="menu">
+                        <% theme.menu.forEach(function (item) {%>
+                        <li role="presentation" class="text-center">
+                            <a href="<%- item.url%>"><i class="fa <%- item.icon%>"></i>
+                                <%= __(item.page+'') %></a>
+                        </li>
+                        <%})%>
+						
+					    <li role="presentation" class="text-center">
+							<script type="text/javascript">
+							//浅色/深色模式
+							var cssType = window.localStorage["lightDarkCss"];
+							if(cssType == "light"){
+								document.write("<a><i id='lightDarkBtn' class='fa fa-moon-o' aria-hidden='true' style='cursor:pointer' title='切换深色模式'></i></a>");
+							}else{
+								document.write("<a><i id='lightDarkBtn' class='fa fa-sun-o' aria-hidden='true' style='cursor:pointer' title='切换浅色模式'></i></a>");
+							}
+							</script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
