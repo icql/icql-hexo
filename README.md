@@ -2,6 +2,13 @@
 
 hexo主题仓库（修改定制原主题备份）
 
+## docker部署
+https://hub.docker.com/r/icql/hexo
+``` bash
+docker pull icql/hexo
+docker run -it -p 4000:4000 -v /root/hexo:/hexo  --name hexo-test icql/hexo:0.2.4 /bin/bash
+```
+
 ## [snippet](https://github.com/shenliyang/hexo-theme-snippet)
 * 原主题作者：shenliyang
 * 原主题仓库：https://github.com/shenliyang/hexo-theme-snippet
