@@ -17,8 +17,11 @@ menu:
 - page: k8s
   url: /categories/k8s/
   icon:
-- page: 分布式
-  url: /categories/分布式/
+#- page: 微服务
+#  url: /categories/microservice/
+#  icon:
+- page: 中间件
+  url: /categories/middleware/
   icon:
 - page: 杂七杂八
   url: /categories/杂七杂八/
@@ -117,7 +120,7 @@ tagcloud:
 # 主题自定义个性化配置
 
 ## 网站宣传语
-branding: 
+branding:
 
 ## 设置banner背景图片
 banner:
@@ -177,16 +180,10 @@ valine:
    meta: nick,mail
    pageSize: 10
 
-### 畅言评论(需要ICP备案)
-changyan:
-  enable: false
-  appid:
-  conf:
-
 ### 来必力
 livere:
   enable: false
-  livere_uid: MTAyMC8zMzA1MS85NjEz
+  livere_uid:
 
 ## Gitalk评论
 gitalk:
@@ -199,51 +196,10 @@ gitalk:
    perPage:
    distractionFreeMode: true
 
-### Disqus评论
-disqus:
-  enable: false
-  shortname: snippet
-  count: false
-
-### gitment评论(长期不更新，不建议使用)
-gitment:
-  enable: false
-  owner:
-  repo:
-  client_id:
-  client_secret:
-  perPage: 10
-
-### 友言评论(服务不稳定)
-uyan:
-  enable: false
-  uyan_id: 1966422
-
-
 ## 网站访客统计
 visit_counter:
    site: true
    page: true
-
-## 网站访问统计分析
-
-### 网盟CNZZ统计
-cnzz_analytics: 1263868967
-
-### 百度统计
-baidu_analytics:
-
-### 谷歌统计
-google_analytics:
-
-### 腾讯分析
-tencent_analytics:
-
-### 百度站点认证
-baidu_site_verification:
-
-### 百度自动推送
-baidu_push: true
 
 #网站配置
 since: 2017 - 2020

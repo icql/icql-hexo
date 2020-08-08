@@ -95,8 +95,8 @@ window.onload = function() {
                 $toc.style.top = "5px";
                 $toc.style.left = left + "px";
                 $toc.style.width = width + "px";
-                $toc.style.height = "86vh";
-                $toc.style.overflow = "auto";
+				$toc.style.height = "86vh";
+				$toc.style.overflow = "auto";
             }
         }
         clearTimeout(timer);
