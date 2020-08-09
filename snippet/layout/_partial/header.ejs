@@ -1,3 +1,12 @@
+<script type="text/javascript">
+//浅色/深色模式
+var cssType = window.localStorage["lightDarkCss"];
+if(cssType == "light"){
+    document.write("<link rel='stylesheet' href='/css/style-light.css?rev=@@hash' id='lightDarkCss'>");
+}else{
+    document.write("<link rel='stylesheet' href='/css/style-dark.css?rev=@@hash' id='lightDarkCss'>");
+}
+</script>
 <header class="main-header" <% if(theme.banner.img){ %> style="background-image:url(
     <%= url_for(theme.banner.img) %>)"
     <%}%> >
@@ -15,13 +24,4 @@
             <% } %>
         </div>
     </div>
-    <script type="text/javascript">
-    //浅色/深色模式
-    var cssType = window.localStorage["lightDarkCss"];
-    if(cssType == "light"){
-        document.write("<link rel='stylesheet' href='/css/style-light.css?rev=@@hash' id='lightDarkCss'>");
-    }else{
-        document.write("<link rel='stylesheet' href='/css/style-dark.css?rev=@@hash' id='lightDarkCss'>");
-    }
-    </script>
 </header>
